@@ -1,0 +1,23 @@
+{
+    "name": "qq175023117/laravel-MiPush",
+    "description": "php laravel MiPush",
+    "license": "MIT",
+    "keywords": ["laravel MiPush"],
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "qq175023117",
+            "email": "175023117@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Qian\\MiPush\\": "packages/MiPush/MiPush/src/"
+        }
+    }
+}
