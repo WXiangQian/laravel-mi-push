@@ -17,7 +17,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Qian\\MiPush\\": "packages/MiPush/MiPush/src/"
+            "Qian\\MiPush\\": "src/"
         }
     }
 }
