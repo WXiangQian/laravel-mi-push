@@ -1,8 +1,8 @@
 {
-    "name": "qq175023117/laravel-MiPush",
-    "description": "php laravel MiPush",
+    "name": "qq175023117/laravel-mi-push",
+    "description": "php laravel mi-push",
     "license": "MIT",
-    "keywords": ["laravel MiPush"],
+    "keywords": ["laravel mi-push"],
     "version": "1.0.0",
     "authors": [
         {
