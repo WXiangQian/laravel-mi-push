@@ -6,7 +6,7 @@
  * @desc 消息状态追踪API。
  *
  */
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class Tracer extends HttpBase {
 

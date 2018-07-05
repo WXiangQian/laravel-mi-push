@@ -4,7 +4,7 @@
  * @name HttpBase
  *
  */
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class HttpBase {
     private $appSecret;

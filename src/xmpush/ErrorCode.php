@@ -6,7 +6,7 @@
  * @desc 错误码
  *
  */
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class ErrorCode {
     const Success = 0;

@@ -6,7 +6,7 @@
  * Time: 下午6:30
  */
 
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class PushRequestPath {
     // regid message

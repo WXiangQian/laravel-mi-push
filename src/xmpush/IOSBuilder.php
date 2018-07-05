@@ -7,7 +7,7 @@
  * @desc 构建发送给IOS设备的Message对象。
  *
  */
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class IOSBuilder extends Message {
     const soundUrl = 'sound_url';

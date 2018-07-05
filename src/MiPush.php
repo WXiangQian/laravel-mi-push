@@ -2,11 +2,11 @@
 
 namespace Qian\MiPush;
 
-use Src\MiPush\xmpush\Builder;
-use Src\MiPush\xmpush\Constants;
-use Src\MiPush\xmpush\IOSBuilder;
-use Src\MiPush\xmpush\Sender;
 
+use Qian\MiPush\xmpush\Builder;
+use Qian\MiPush\xmpush\Constants;
+use Qian\MiPush\xmpush\IOSBuilder;
+use Qian\MiPush\xmpush\Sender;
 
 class MiPush
 {

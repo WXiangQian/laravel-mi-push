@@ -5,7 +5,7 @@
  * @name Subscription
  *
  */
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class Subscription extends HttpBase {
 

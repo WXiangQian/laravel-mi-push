@@ -6,7 +6,7 @@
  * @desc 常量定义
  *
  */
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 
 class Constants {

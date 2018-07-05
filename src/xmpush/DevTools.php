@@ -5,7 +5,7 @@
  * @name DevTools
  *
  */
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class DevTools extends HttpBase {
 

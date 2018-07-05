@@ -7,7 +7,7 @@
  * @desc 构建要发送的消息内容。
  *
  */
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class Message {
     const EXTRA_PREFIX = 'extra.';

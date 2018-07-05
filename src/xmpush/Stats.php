@@ -6,7 +6,7 @@
  * @desc 获取发送的消息统计数据。
  *
  */
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class Stats extends HttpBase {
     private $package;   //android用

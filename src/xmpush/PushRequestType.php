@@ -6,7 +6,7 @@
  * Time: 下午5:26
  */
 
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 class PushRequestType {
     const MESSAGE = 0;

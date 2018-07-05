@@ -7,7 +7,7 @@
  * Time: 下午4:29
  */
 
-namespace Src\MiPush\xmpush;
+namespace Qian\MiPush\xmpush;
 
 
 class ServerSwitch {
