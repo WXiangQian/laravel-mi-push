@@ -1,7 +1,7 @@
 # laravel-mi-push基于laravel5.5的小米推送
 
 # 安装方法
-### 1、在项目目录下 
+### 1、安装
     composer require qq175023117/laravel-mi-push    
     composer install
     
@@ -13,14 +13,19 @@
  如果无法安装 请执行一下 composer update nothing 然后 composer update
  
  
-###  2、在config/app.php
-   'providers' 中添加 \Qian\MiPush\MiPushServiceProvider::class,
-   
-   
-###  3、执行 php artisan config:cache 清空配置缓存 
-执行 php artisan vendor:publish
+###  2、配置app.php
 
-###  4、配置 config/mipush.php
+    在config/app.php 'providers' 中添加 \Qian\MiPush\MiPushServiceProvider::class,
+   
+   
+###  3、执行命令
+    php artisan config:cache 清空配置缓存 
+    php artisan vendor:publish 
+
+###  5、配置文件
+    config/mipush.php
+
+# 实例
 
 ### 安卓初始化以及基本配置
 
@@ -73,7 +78,7 @@
      $message->extra('payload', $Payload);
      $message->build();
      
-##### 苹果topic发送
+##### 苹果全局发送
      
      先插入苹果初始化以及基本配置
      $sender = new Sender();
