@@ -46,6 +46,12 @@
 ##### 安卓向所有设备发送
 
     先插入安卓公共方法
+    
+    $topic = "debug";
+    if (config('app.env') == 'production')  {
+        $topic = "release";
+    }
+            
     $sender = new Sender();
   
     $res = $sender->broadcast($message, $topic)->getRaw();
