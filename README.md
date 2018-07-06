@@ -7,7 +7,7 @@
     
     或
     
-    composer.json 中添加 "qq175023117/laravel-mi-push": "^1.1"  
+    composer.json 中添加 "qq175023117/laravel-mi-push": "^1.2"  
     composer update 
 
  如果无法安装 请执行一下 composer update nothing 然后 composer update
