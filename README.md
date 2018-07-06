@@ -30,8 +30,10 @@
     ios没有环境区分
 ### 安卓公共方法
 
-    Constants::setSecret(config('mipush.android.app_secret'));
-    Constants::setBundleId(config('mipush.android.bundle_id'));
+    $secret = config('mipush.android.app_secret');
+    $package = config('mipush.android.bundle_id');
+    Constants::setSecret($secret);//AppSecret
+    Constants::setPackage($package);//包名
     
     $message = new Builder();
     $message->title($title);  // 通知栏的title
@@ -72,8 +74,10 @@
     
 ### 苹果公共方法
 
-     Constants::setSecret(config('mipush.ios.app_secret'));
-     Constants::setBundleId(config('mipush.ios.bundle_id'));
+    $secret = config('mipush.ios.app_secret');
+    $package = config('mipush.ios.bundle_id');
+    Constants::setSecret($secret);//AppSecret
+    Constants::setPackage($package);//包名
      
       if (config('app.env') != 'production') {
          Constants::useSandbox();
