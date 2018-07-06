@@ -22,13 +22,7 @@
 
 ###  4、配置 config/mipush.php
 
-
-## 使用方法
-    app.env中如果为production，则是正式环境，否则为测试
-    debug 为测试环境topic的前缀
-    release 为正式环境topic的前缀
-    ios没有环境区分
-### 安卓公共方法
+### 安卓初始化以及基本配置
 
     $secret = config('mipush.android.app_secret');
     $package = config('mipush.android.bundle_id');
@@ -45,14 +39,9 @@
     $message->notifyId(2); // 通知类型。最多支持0-4 5个取值范围，同样的类型的通知会互相覆盖，不同类型可以在通知栏并存
     $message->build();
         
-##### 安卓向所有设备发送
+##### 安卓topic发送
 
-    先插入安卓公共方法
-    
-    $topic = "debug";
-    if (config('app.env') == 'production')  {
-        $topic = "release";
-    }
+    先插入安卓初始化以及基本配置
             
     $sender = new Sender();
   
@@ -61,27 +50,20 @@
 
 ##### 安卓根据alias推送
     
-     先插入安卓公共方法
-     
-    $alias = "debug_{$alias}";
-    if (config('app.env') == 'production')  {
-        $alias = "release_{$alias}";
-    }
+     先插入安卓初始化以及基本配置
     
     $sender = new Sender();
     $res = $sender->sendToAlias($message, $alias)->getRaw();
     return $res;
     
-### 苹果公共方法
+### 苹果初始化以及基本配置
 
     $secret = config('mipush.ios.app_secret');
     $package = config('mipush.ios.bundle_id');
     Constants::setSecret($secret);//AppSecret
     Constants::setPackage($package);//包名
-     
-      if (config('app.env') != 'production') {
-         Constants::useSandbox();
-     }
+    
+     // Constants::useSandbox(); //此代码为测试环境添加
      
      $message = new IOSBuilder();
      $message->title($title);
@@ -91,9 +73,9 @@
      $message->extra('payload', $Payload);
      $message->build();
      
-##### 苹果向所有设备发送
+##### 苹果topic发送
      
-     先插入苹果公共方法
+     先插入苹果初始化以及基本配置
      $sender = new Sender();
 
      $res = $sender->broadcastAll($message)->getRaw();
@@ -102,7 +84,7 @@
 
 ##### 苹果根据alias推送
         
-     先插入苹果公共方法
+     先插入苹果初始化以及基本配置
      
     $sender = new Sender();
     $res = $sender->sendToAlias($message,$alias)->getRaw();
