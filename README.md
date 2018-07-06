@@ -2,12 +2,12 @@
 
 # 安装方法
 ### 1、在项目目录下 
-    composer require qq175023117/laravel-mi-push dev-master   
+    composer require qq175023117/laravel-mi-push    
     composer install
     
     或
     
-    composer.json 中添加 "qq175023117/laravel-mi-push": "dev-master"  
+    composer.json 中添加 "qq175023117/laravel-mi-push": "^1.1"  
     composer update 
 
  如果无法安装 请执行一下 composer update nothing 然后 composer update
@@ -36,3 +36,5 @@ MiPush::sendToAlias($title,$description,$payload,$alias);
 
 ##### 苹果根据alias推送
 MiPush::iosSendToAlias($title,$description,$payload,$alias);
+
+#### 暂时四个方法可以满足基本需求，如有需要，欢迎大家提交问题
