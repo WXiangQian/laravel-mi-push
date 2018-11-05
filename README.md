@@ -2,12 +2,12 @@
 
 # 安装方法
 ### 1、安装
-    composer require qq175023117/laravel-mi-push    
+    composer require WXiangQian/laravel-mi-push    
     composer install
     
     或
     
-    composer.json 中添加 "qq175023117/laravel-mi-push": "^1.2"  
+    composer.json 中添加 "WXiangQian/laravel-mi-push": "^1.2"  
     composer update 
 
  如果无法安装 请执行一下 composer update nothing 然后 composer update
